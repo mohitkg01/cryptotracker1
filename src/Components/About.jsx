@@ -3,6 +3,7 @@ import img from "../Assets/aboutUs.webp";
 import { LuPiggyBank } from "react-icons/lu";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { MdOutlineSyncLock } from "react-icons/md";
+
 const About = () => {
   return (
     <div id='aboutus'>

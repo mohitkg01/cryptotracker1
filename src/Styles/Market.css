@@ -1,0 +1,10 @@
+#market{
+    background-color: bisque;
+}
+.markets{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto;
+}
+
