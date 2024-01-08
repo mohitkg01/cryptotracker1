@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(()=>{
     const fetchCoins= async ()=>{
       const {data}=await axios.get(`${server}/coins/markets?vs_currency=USD`)
-      console.log(data);
+      // console.log(data);
       setCoins(data);
     }
     fetchCoins();
