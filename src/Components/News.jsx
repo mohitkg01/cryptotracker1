@@ -13,7 +13,7 @@ const News = () => {
 
   const fetchNews=async ()=>{
     const {data}=await axios.get(`${url}`);
-    console.log(data.articles);
+    //console.log(data.articles);
     setNews(data.articles);
   }
   return (
