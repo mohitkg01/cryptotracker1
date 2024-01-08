@@ -1,0 +1,35 @@
+nav{
+    background-color: aquamarine;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-section{
+        a{
+        text-decoration: none;}
+        p{
+            color: rgb(35, 33, 33);
+            font-weight: bolder;
+            margin: 0;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .right-section{
+        a{
+            text-decoration: none;
+            margin: 1rem;
+            transition: color 0.3s ease;
+            
+            &:hover{
+                color: yellow;
+            }
+            
+        }
+
+    }
+    
+}
+

@@ -7,6 +7,9 @@ import News from './Components/News';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
+import './App.css';
+import './Styles/header.css';
+
 function App() {
   return (
     <Router>
