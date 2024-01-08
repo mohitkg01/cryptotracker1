@@ -14,6 +14,7 @@ import './Styles/About.css';
 import './Styles/Market.css';
 import './Styles/News.css';
 import './Styles/Footer.css';
+import './Styles/CoinCard.css';
 
 
 function App() {
