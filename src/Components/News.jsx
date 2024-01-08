@@ -18,7 +18,7 @@ const News = () => {
   }
   return (
     <div id="news">
-      <h1>Latest News</h1>
+      <h1 style={{textAlign:"center",padding:"1rem 0 0 0"}}>Latest News</h1>
       {news.map((i,index)=>(
         <NewsCard
         key={index}

@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <img src={img} alt="" />
       </div>
-      <div>
+      <div style={{backgroundColor: "#FDE2F3", color:"#422881",display:"flex",alignContent:"center", flexDirection:"column",textAlign:"center"}} >
         <h1>Our Services</h1>
         <div className="ourservices">
             <div><LuPiggyBank size={70}/>
