@@ -1,0 +1,52 @@
+.home{
+    background: red;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bitcoin-right{
+        margin-bottom: -10rem;
+    }
+    .bitcoin-left{
+        justify-content: flex-end;
+    }
+
+    .bitcoin-left,
+    .bitcoin-right{
+        display: flex;
+        align-items: center;
+        margin-top: -10rem;
+        animation: upDown 3s ease infinite;
+
+        img{
+            width: 8rem;
+        }
+    }
+    
+    .center-text{
+        text-align: center;
+        h1{
+            font-size: 5vw;
+            font-weight: bold;
+            margin: 0;
+        }
+        span{
+            display: block;
+            font-size: large;
+            margin-top: 10px;
+        }
+    }
+}
+
+@keyframes upDown{
+    0%{
+        transform: translateY(20%);
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translateY(20%)
+    }
+}
