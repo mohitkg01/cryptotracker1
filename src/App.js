@@ -12,6 +12,8 @@ import './Styles/header.css';
 import './Styles/Home.css';
 import './Styles/About.css';
 import './Styles/Market.css';
+import './Styles/News.css';
+import './Styles/Footer.css';
 
 
 function App() {

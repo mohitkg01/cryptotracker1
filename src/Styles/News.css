@@ -1,0 +1,45 @@
+#news{
+    background-color: #ebbbbb;
+}
+.newsCard{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 5rem 0 20rem;
+    background-color: aqua;
+
+    img{
+        width: 300px;
+        object-fit: contain;
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 1rem;
+
+        p{
+            padding-top: 1rem;
+        }
+        h3{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            max-height: 5em;
+            overflow: hidden;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        button{
+            padding: 8px 16px;
+            background-color: blue;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover{
+                background-color: palevioletred;
+            }
+        }
+    }
+
+}
