@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 
 const Market = () => {
   const [bitcoinData,setBitcoinData]=useState([]);
-  // const [currentPage,setCurrentPage]=useState(1);
-  // const
+  const [currentPage,setCurrentPage]=useState(1);
+  const [postPerpage]=useState(10);
+
   useEffect(()=>{
     fetchCoinData();
   },[]);
@@ -14,6 +15,20 @@ const Market = () => {
     // console.log(data);
     setBitcoinData(data);
   }
+//pagination
+  const indexOfLastPage=currentPage * postPerpage;
+  console.log(indexOfLastPage);
+  const indexOfFirstPage=indexOfLastPage - postPerpage;
+  console.log(indexOfFirstPage);
+  const currentPosts=bitcoinData.slice(indexOfFirstPage,indexOfLastPage);
+console.log(currentPosts);
+
+const PageNumber=(pageNum)=>{
+  setCurrentPage(pageNum);
+  console.log(pageNum);
+  }
+
+
   return (
     <div id='market'>
       <div className="markets">
@@ -30,9 +45,9 @@ const Market = () => {
             </tr>
           </thead>
           <tbody>
-            {bitcoinData.map((coin,index)=>(
-              <tr>
-                <td>
+            {currentPosts.map((coin,index)=>(
+              <tr key={index} style={{ "borderBottom":"1px solid black"}}>
+                <td style={{"display":"flex","justifyContent":"flex-start"}}>
                   <img src={coin.image} alt={coin.name} />
                   <p>{coin.name}</p>
                 </td>
@@ -43,6 +58,17 @@ const Market = () => {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="pagination">
+        {/* {console.log(Array.from)} */}
+        {Array.from({ length: Math.ceil(bitcoinData.length / postPerpage)}).map((_,index)=>(
+          <button key={index}
+          className={currentPage === index + 1 ? 'active' : ''}
+          onClick={()=> PageNumber(index +1)}>
+            {index + 1}
+          </button>
+        ))}
+
       </div>
     </div>
   )
