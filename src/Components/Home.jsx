@@ -13,7 +13,7 @@ const Home = () => {
   const[coins,setCoins]=useState([]);
   useEffect(()=>{
     const fetchCoins= async ()=>{
-      const {data}=await axios.get(`${server}/coins/markets?vs_currency=USD`)
+      const {data}=await axios.get(`${server}/coins/markets?vs_currency=USD&per_page=4`)
       // console.log(data);
       setCoins(data);
     }

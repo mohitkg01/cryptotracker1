@@ -46,3 +46,9 @@
         }
     }
 }
+
+.scrollup{
+    color: rgb(68, 64, 64);
+    margin-right: -80rem;
+    scale: 2;
+}

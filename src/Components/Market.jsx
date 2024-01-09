@@ -17,15 +17,19 @@ const Market = () => {
   }
 //pagination
   const indexOfLastPage=currentPage * postPerpage;
-  console.log(indexOfLastPage);
+  // console.log(indexOfLastPage);
   const indexOfFirstPage=indexOfLastPage - postPerpage;
-  console.log(indexOfFirstPage);
+  // console.log(indexOfFirstPage);
   const currentPosts=bitcoinData.slice(indexOfFirstPage,indexOfLastPage);
-console.log(currentPosts);
+// console.log(currentPosts);
+
+// const numberOfPage=Math.ceil(bitcoinData.length/postPerpage);
+// const pageIndex=Array.from({ length : numberOfPage},(_,index)=> index+1)
+
 
 const PageNumber=(pageNum)=>{
   setCurrentPage(pageNum);
-  console.log(pageNum);
+  // console.log(pageNum);
   }
 
 
@@ -68,6 +72,13 @@ const PageNumber=(pageNum)=>{
             {index + 1}
           </button>
         ))}
+        {/* <button>{pageIndex}</button> */}
+        {/* {pageIndex.slice(
+          Math.max(0,currentPage-2),
+          Math.min(numberOfPage,currentPage +4)
+        ).map((idx)=>{
+          <button key={idx} className={idx ===currentPage ? "active" : ''}>{idx}</button>
+        })} */}
 
       </div>
     </div>

@@ -15,16 +15,25 @@ const About = () => {
         </div>
         <img src={img} alt="" />
       </div>
-      <div style={{backgroundColor: "#FDE2F3", color:"#422881",display:"flex",alignContent:"center", flexDirection:"column",textAlign:"center"}} >
+      <div className='services'  >
         <h1>Our Services</h1>
         <div className="ourservices">
-            <div><LuPiggyBank size={70}/>
+            <div>
+              <LuPiggyBank size={70}/>
+             <p>Safe transaction</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div><LuPiggyBank size={70}/>
+            <p>Safe transaction</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div><MdOutlineSyncLock size={70}/>
+            <p>Real Time Query about crypto</p>
+            <p>Lorem ipsum dolor sit amet consectetur,elit maiores ox.</p>
             </div>
             <div><TfiHeadphoneAlt size={70}/>
+            <p>Phone Support and Help</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import {HashLink} from "react-router-hash-link";
 import {Link} from "react-router-dom";
 const Header = () => {
   return (
-    <nav>
+    <nav id='header'>
         <div className="left-section">
           <Link >
             <p>CryptoTracker</p>
@@ -13,7 +13,7 @@ const Header = () => {
            <HashLink to="/#aboutus">Aboutusss</HashLink>
             <HashLink to="/#market">Market</HashLink>
             <HashLink to="/#news">News</HashLink>
-            <Link to="/#contact">Contact us</Link>
+            <Link to="/footer">Contact us</Link>
         </div>
     </nav>
   )
