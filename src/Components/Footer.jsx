@@ -10,10 +10,11 @@ const url="https://newsapi.org/v2/everything?q=bitcoin&apiKey=81132434456849cea3
 const Footer = () => {
   const [news,setNews]=useState([]);
   useEffect(()=>{
-urldata();
+   urldata();
   },[]);
 
-  const urldata=async()=>{
+  const urldata = async() =>{
+
     const data= await axios.get(`${url}`); 
     // console.log(data.data.articles);
     const firstTwoarticles=data.data.articles.slice(0,2);
