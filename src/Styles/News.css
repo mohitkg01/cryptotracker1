@@ -1,45 +1,64 @@
-#news{
+#news {
     background-color: #fde2f3;
 }
-.newsCard{
+
+.newsCard {
     display: flex;
     flex-direction: row;
-    padding: 1rem 5rem 0 20rem;
+    padding: 1rem 2rem;
     background-color: rgb(198, 214, 214);
+}
 
-    img{
-        width: 300px;
-        object-fit: contain;
+.newsCard img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    object-fit: contain;
+}
+
+.newsCard > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem; 
+}
+
+.newsCard > div p {
+    padding-top: 1rem;
+}
+
+.newsCard > div h3 {
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    max-height: 5em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.newsCard > div button {
+    padding: 8px 16px;
+    background-color: rgba(78, 78, 82, 0.433);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsCard > div button:hover {
+    background-color: palevioletred;
+}
+
+@media screen and (max-width: 768px) {
+    .newsCard {
+        flex-direction: column; 
     }
-    >div{
-        display: flex;
-        flex-direction: column;
-        padding: 0 0 0 1rem;
 
-        p{
-            padding-top: 1rem;
-        }
-        h3{
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            max-height: 5em;
-            overflow: hidden;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        button{
-            padding: 8px 16px;
-            background-color: rgba(78, 78, 82, 0.433);
-            border: none;
-            border-radius: 4px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-
-            &:hover{
-                background-color: palevioletred;
-            }
-        }
+    .newsCard > div {
+        padding: 1rem 0; 
     }
 
+    .newsCard img {
+        max-width: 100%;
+    }
 }

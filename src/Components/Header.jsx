@@ -10,10 +10,10 @@ const Header = () => {
           </Link>
         </div>
         <div className="right-section">
-           <HashLink to="/#aboutus">Aboutusss</HashLink>
+           <HashLink to="/#aboutus">About</HashLink>
             <HashLink to="/#market">Market</HashLink>
             <HashLink to="/#news">News</HashLink>
-            <Link to="/footer">Contact us</Link>
+            <Link to="/footer">Contact</Link>
         </div>
     </nav>
   )

@@ -52,3 +52,8 @@
     margin-right: -80rem;
     scale: 2;
 }
+@media screen and (max-width: 768px) {
+    .footer .scrollup {
+        margin-right: 0;
+    }
+}

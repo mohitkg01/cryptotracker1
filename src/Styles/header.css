@@ -1,36 +1,54 @@
-nav{
-    background-color:#7896efd9;
+nav {
+    background-color: #7896efd9;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .left-section{
-        a{
-        text-decoration: none;}
-        p{
-            color: rgb(35, 33, 33);
-            font-weight: bolder;
-            margin: 0;
-            font-size: 25px;
-            cursor: pointer;
-        }
-    }
-
-    .right-section{
-        a{
-            text-decoration: none;
-            margin: 1rem;
-            color: black;
-            transition: color 0.3s ease;
-            
-            &:hover{
-                color: rgb(176, 111, 120);
-            }
-            
-        }
-
-    }
-    
 }
 
+nav .left-section a {
+    text-decoration: none;
+}
+
+nav .left-section p {
+    color: rgb(35, 33, 33);
+    font-weight: bolder;
+    margin: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav .right-section a {
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+nav .right-section a:hover {
+    color: rgb(176, 111, 120);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    nav .left-section {
+        margin-bottom: 10px;
+    }
+    nav .left-section p{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav .right-section {
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+margin-right: 0;
+    }
+    nav .right-section a {
+        margin: 5px;
+    }
+}
